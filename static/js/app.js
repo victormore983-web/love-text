@@ -3,10 +3,10 @@ const __vite__mapDeps = (
   m = __vite__mapDeps,
   d = m.f ||
     (m.f = [
-      "/static/js/troika-three-text.esm.js",
-      "/static/js/three.module.js",
-      "/static/js/home.js",
-      "/static/js/particle-effect.js",
+      "./static/js/troika-three-text.esm.js",
+      "./static/js/three.module.js",
+      "./static/js/home.js",
+      "./static/js/particle-effect.js",
     ]),
 ) => i.map((i) => d[i]);
 function e0(l, i) {
@@ -19926,12 +19926,12 @@ y1({
           ),
         "./pages/views/home.tsx": () =>
           It(
-            () => import("/static/js/home.js"),
+            () => import("./home.js"),
             __vite__mapDeps([22, 23, 21, 20]),
           ),
         "./pages/views/particle-effect.tsx": () =>
           It(
-            () => import("/static/js/particle-effect.js").then((i) => i.p),
+            () => import("./particle-effect.js").then((i) => i.p),
             __vite__mapDeps([23, 21]),
           ),
         "./pages/welcome.tsx": () =>

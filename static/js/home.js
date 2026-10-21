@@ -1,4 +1,4 @@
-import { r as M, j as B, R as si } from "/static/js/app.js";
+import { r as M, j as B, R as si } from "./app.js";
 import {
   m as ii,
   e as Vt,
@@ -16,7 +16,7 @@ import {
   h as Je,
   P as pi,
   j as mi,
-} from "/static/js/particle-effect.js";
+} from "./particle-effect.js";
 import {
   T as vi,
   V as j,
@@ -76,8 +76,8 @@ import {
   a1 as Bi,
   a2 as is,
   a3 as St,
-} from "/static/js/three.module.js";
-import { T as Ii, p as Hi } from "/static/js/troika-three-text.esm.js";
+} from "./three.module.js";
+import { T as Ii, p as Hi } from "./troika-three-text.esm.js";
 function ns(e, t) {
   let i;
   return (...s) => {
@@ -6717,7 +6717,7 @@ function Hr({ color: e, messages: t, fontName: i }) {
             delay: Math.random() * 2,
             fontSize: f ? 1 : 1.2,
             color: e ?? "#EE66A6",
-            font: i ? `/font/${i}.ttf` : "font/OpenSans.ttf",
+            font: i ? `./font/${i}.ttf` : "font/OpenSans.ttf",
           },
           `text-${l}-${d}`,
         ),

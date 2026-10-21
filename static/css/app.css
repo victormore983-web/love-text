@@ -3569,7 +3569,7 @@ select {
 }
 @font-face {
   font-family: Mali;
-  src: url("../font/Mali.ttf") format("truetype");
+  src: url("../../font/Mali.ttf") format("truetype");
 }
 @font-face {
   font-family: DancingScript;

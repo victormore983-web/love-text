@@ -20,7 +20,7 @@ import {
   u as En,
   ac as pt,
   ad as Mn,
-} from "/static/js/three.module.js";
+} from "./three.module.js";
 function Gn() {
   var c = Object.create(null);
   function t(r, e) {

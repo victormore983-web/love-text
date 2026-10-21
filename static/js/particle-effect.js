@@ -5,7 +5,7 @@ import {
   e as um,
   r as lt,
   j as gl,
-} from "/static/js/app.js";
+} from "./app.js";
 import {
   ae as bp,
   f as Rp,
@@ -28,7 +28,7 @@ import {
   V as ju,
   a as Wp,
   an as Fp,
-} from "/static/js/three.module.js";
+} from "./three.module.js";
 var Hc = { exports: {} },
   jl = {};
 /**

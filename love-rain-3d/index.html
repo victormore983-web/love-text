@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=73ba4f3f-628c-490d-804f-5430bcff08b1
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveGift - Envía amor a quien amas 💝</title>
+    <meta name="description"
+          content="💝 ¡Envía amor a quien más quieres! Crea tarjetas, mensajes y regalos online llenos de significado. ¡Deja que el amor se difunda! 💌✨">
+    <meta name="keywords" content="lovegift, enviar amor, tarjeta online, regalo, mensaje, amor, cumpleaños, san valentín">
+    <link rel="canonical" href="https://lovegift.online/">
+    <meta property="og:title" content="💝 LoveGift - Envía amor a quien amas">
+    <meta property="og:description"
+          content="💝 ¡Envía amor a quien más quieres! Crea tarjetas, mensajes y regalos online llenos de significado. ¡Deja que el amor se difunda! 💌✨">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lovegift.online/">
+    <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0757/9700/4572/files/tim.png?v=1767367148">
+    <meta property="og:image:height" content="575">
+    <meta property="og:image:width" content="288">
+    <meta name="twitter:title" content="💝 LoveGift - Envía amor a quien amas">
+    <meta name="twitter:description"
+          content="💝 ¡Envía amor a quien más quieres! Crea tarjetas, mensajes y regalos online llenos de significado. ¡Deja que el amor se difunda! 💌✨">
+    <meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/0757/9700/4572/files/tim.png?v=1767367148">
+    <meta name="twitter:site" content="@lovegift online">
+    <meta property="og:image:alt" content="Portada de lovegift online" />
+    <meta name="twitter:image:alt" content="Portada de lovegift online" />
+    <meta property="og:site_name" content="lovegift online" />
+    <meta name="twitter:creator" content="@lovegift online" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="author" content="lovegift online">
+    <meta name="copyright" content="© 2025 lovegift online">
+    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0757/9700/4572/files/tim.png?v=1767367148">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Pacifico&family=Noto+Sans:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+    <link rel="stylesheet" href="/static/css/app.css" />
+  </head>
+  <body class="font-sans antialiased">
+    <script>
+      (function () {
+        return; /* local: sin bloqueo anti-devtools ni redirección */
+        var host     = (location.hostname || "").toLowerCase();
+        var referrer = (document.referrer  || "").toLowerCase();
+        var inIframe = false;
+        try { inIframe = window.self !== window.top; } catch (e) { inIframe = true; }
+
+        if (
+          host.indexOf("lovegift.online") !== -1 ||
+          host === "localhost" ||
+          host === "127.0.0.1"
+        ) return;
+        if (inIframe && referrer.indexOf("lovegift.online") !== -1) return;
+
+        var REDIRECT_URL = "https://www.youtube.com/watch?v=IxX_QHay02M&list=RDIxX_QHay02M&start_radio=1";
+        var redirected = false;
+        function bye() {
+          if (redirected) return;
+          redirected = true;
+          try {
+            if (inIframe && window.top) window.top.location.replace(REDIRECT_URL);
+            else location.replace(REDIRECT_URL);
+          } catch (e) { location.href = REDIRECT_URL; }
+        }
+
+        document.addEventListener("contextmenu", function (e) { e.preventDefault(); }, true);
+        document.addEventListener("copy",  function (e) { e.preventDefault(); }, true);
+        document.addEventListener("cut",   function (e) { e.preventDefault(); }, true);
+        document.addEventListener("selectstart", function (e) { e.preventDefault(); }, true);
+        document.addEventListener("dragstart",   function (e) { e.preventDefault(); }, true);
+
+        document.addEventListener("keydown", function (e) {
+          var k = (e.key || "").toLowerCase();
+          var isF12 = e.keyCode === 123 || k === "f12";
+          var ctrl  = e.ctrlKey || e.metaKey;
+          var devCombo =
+            (ctrl && e.shiftKey && (k === "i" || k === "j" || k === "c")) ||
+            (ctrl && (k === "u" || k === "s"));
+          if (isF12 || devCombo) {
+            e.preventDefault();
+            e.stopPropagation();
+            bye();
+          }
+        }, true);
+
+        var isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+        if (!isTouch) {
+          var THRESHOLD = 170;
+          function checkDevtools() {
+            var widthDiff  = window.outerWidth  - window.innerWidth;
+            var heightDiff = window.outerHeight - window.innerHeight;
+            if (widthDiff > THRESHOLD || heightDiff > THRESHOLD) bye();
+          }
+          setInterval(checkDevtools, 1000);
+
+          setInterval(function () {
+            var t0 = performance.now();
+            // eslint-disable-next-line no-debugger
+            debugger;
+            var t1 = performance.now();
+            if (t1 - t0 > 150) bye();
+          }, 1500);
+        }
+      })();
+    </script>
+    <style>
+      #lovegift-entrance {
+        position: fixed;
+        inset: 0;
+        z-index: 99998;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        background: radial-gradient(
+          circle at center,
+          #4a1515 0%,
+          #2a0505 30%,
+          #0a0001 60%,
+          #000 100%
+        );
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+      }
+      #lovegift-entrance.is-ready {
+        opacity: 1;
+        visibility: visible;
+      }
+      #lovegift-entrance.is-leaving {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.04);
+        transition: opacity 0.55s ease, visibility 0.55s ease, transform 0.55s ease;
+      }
+      #lovegift-entrance::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle, transparent 50%, rgba(10, 0, 0, 0.32) 100%);
+        pointer-events: none;
+      }
+      #lovegift-entrance::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("https://grainy-gradients.vercel.app/noise.svg");
+        opacity: 0.06;
+        filter: contrast(150%);
+        pointer-events: none;
+      }
+      .entrance-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+      }
+      #lovegift-enter {
+        position: relative;
+        width: 136px;
+        height: 136px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        filter: drop-shadow(0 0 14px rgba(255, 23, 68, 0.6));
+        animation: entrance-heartbeat 1.8s ease-in-out infinite;
+        transition: filter 0.25s ease, transform 0.25s ease;
+      }
+      #lovegift-enter:hover,
+      #lovegift-enter:focus-visible {
+        filter: drop-shadow(0 0 24px rgba(255, 23, 68, 0.9));
+        outline: none;
+      }
+      #lovegift-enter:active {
+        transform: scale(0.94);
+      }
+      #lovegift-enter:disabled {
+        cursor: wait;
+        opacity: 0.7;
+      }
+      #lovegift-enter svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        fill: #ff1744;
+      }
+      .entrance-hint {
+        margin: 0;
+        color: rgba(255, 210, 220, 0.92);
+        font-family: 'Mali', sans-serif;
+        font-size: 18px;
+        text-shadow: 0 0 16px rgba(255, 105, 140, 0.65);
+        animation: entrance-hint-pulse 2s ease-in-out infinite;
+      }
+      @keyframes entrance-heartbeat {
+        0%, 100% { transform: scale(1); }
+        15% { transform: scale(1.06); }
+        30% { transform: scale(0.99); }
+        45% { transform: scale(1.04); }
+      }
+      @keyframes entrance-hint-pulse {
+        0%, 100% { opacity: 0.62; }
+        50% { opacity: 1; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #lovegift-enter,
+        .entrance-hint { animation: none; }
+      }
+    </style>
+    <section id="lovegift-entrance" aria-label="Abrir el regalo de amor">
+      <div class="entrance-content">
+        <button id="lovegift-enter" type="button" disabled aria-label="Toca para entrar a la pantalla principal">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21.35 10.55 20.03C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35Z"/>
+          </svg>
+        </button>
+        <p class="entrance-hint">Toca el corazón</p>
+      </div>
+    </section>
+    <style>
+      #lovegift-loading {
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        background: radial-gradient(circle at center, #1a0010 0%, #000 70%);
+        color: #fff;
+        font-family: 'Mali', sans-serif;
+        transition: opacity 0.4s ease;
+      }
+      #lovegift-loading .lg-heart {
+        font-size: 56px;
+        animation: lg-pulse 1.1s ease-in-out infinite;
+        filter: drop-shadow(0 0 18px rgba(255, 0, 25, 0.85));
+      }
+      #lovegift-loading .lg-text {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        opacity: 0.9;
+      }
+      #lovegift-loading .lg-dots::after {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        text-align: left;
+        animation: lg-dots 1.4s steps(4, end) infinite;
+      }
+      @keyframes lg-pulse {
+        0%, 100% { transform: scale(1); }
+        50%      { transform: scale(1.18); }
+      }
+      @keyframes lg-dots {
+        0%   { content: ""; }
+        25%  { content: "."; }
+        50%  { content: ".."; }
+        75%  { content: "..."; }
+        100% { content: ""; }
+      }
+    </style>
+    <div id="lovegift-loading" style="display: none;">
+      <div class="lg-heart">💝</div>
+      <div class="lg-text">Cargando mensajes de amor<span class="lg-dots"></span></div>
+    </div>
+    <div
+      id="app"
+      data-page='{
+        "component": "views/home",
+        "props": {
+          "errors": {},
+          "name": "LoveGift",
+          "quote": {
+            "message": "",
+            "author": ""
+          },
+          "message": "",
+          "client": {
+            "fontName": "Mali",
+            "color": "#ff6b9d",
+            "messages": [
+              "VIC PERSI ❤️",
+              "Programador 💻",
+              "Diseñador gráfico 🎨",
+              "White hack 🕶️"
+            ],
+            "music": "https://cdn.shopify.com/s/files/1/0757/9700/4572/files/tiktok-music-1781718335480-vzqe1c.mp3?v=1781718338"
+          },
+          "clientId": "/"
+        },
+        "url": "/",
+        "version": "",
+        "clearHistory": false,
+        "encryptHistory": false
+      }
+      '
+    ></div>
+    <div id="falling-images-stage" style="position: fixed; inset: 0; pointer-events: none; z-index: 50; perspective: 1200px; perspective-origin: 50% 50%;">
+      <div id="falling-images" style="position: absolute; inset: 0; transform-style: preserve-3d; transition: transform 0.08s ease-out; will-change: transform; overflow: visible;"></div>
+    </div>
+    <style>
+      @keyframes fall-image {
+        0%   { transform: translateY(-15vh); opacity: 0; }
+        10%  { opacity: 1; }
+        90%  { opacity: 1; }
+        100% { transform: translateY(115vh); opacity: 0; }
+      }
+      .falling-img {
+        position: absolute;
+        top: 0;
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow:
+          0 0 12px var(--glow-color, rgba(255, 0, 25, 0.85)),
+          0 0 28px var(--glow-color, rgba(255, 0, 25, 0.6)),
+          0 0 48px var(--glow-color, rgba(255, 0, 25, 0.35));
+        animation-name: fall-image;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        will-change: transform, opacity;
+      }
+    </style>
+    <script>
+      (function () {
+        var DEFAULT_IMAGES = [
+          "/images/foto1.jpeg",
+          "/images/foto2.jpeg",
+          "/images/foto3.jpeg",
+          "/images/foto4.jpeg",
+          "/images/foto5.jpeg"
+        ];
+        var container = document.getElementById("falling-images");
+        if (!container) return;
+        var started = false;
+        function rand(min, max) { return Math.random() * (max - min) + min; }
+        function spawn() {
+          var list = window.LOVEGIFT_IMAGES;
+          if (!list || !list.length) return;
+          var img = document.createElement("img");
+          img.className = "falling-img";
+          img.src = list[Math.floor(Math.random() * list.length)];
+          img.alt = "";
+          var size = rand(70, 115);
+          img.style.width = size + "px";
+          img.style.height = size + "px";
+          img.style.left = rand(0, 96) + "vw";
+          img.style.animationDuration = rand(14, 22) + "s";
+          container.appendChild(img);
+          img.addEventListener("animationend", function () {
+            if (img.parentNode) img.parentNode.removeChild(img);
+          });
+        }
+        function attachTilt() {
+          var stage = document.getElementById("falling-images-stage");
+          if (!stage || stage.dataset.tilt) return;
+          stage.dataset.tilt = "1";
+          window.addEventListener("pointermove", function (e) {
+            var x = (e.clientX / window.innerWidth - 0.5) * 2;
+            var y = (e.clientY / window.innerHeight - 0.5) * 2;
+            container.style.transform = "rotateY(" + (x * 8) + "deg) rotateX(" + (-y * 8) + "deg)";
+          });
+        }
+        function start() {
+          if (started) return;
+          started = true;
+          attachTilt();
+          if (!window.LOVEGIFT_IMAGES || window.LOVEGIFT_IMAGES.length === 0) {
+            window.LOVEGIFT_IMAGES = DEFAULT_IMAGES;
+          }
+          spawn();
+          spawn();
+          spawn();
+          setInterval(spawn, 3200);
+        }
+        window.addEventListener("lovegift-ready", start);
+        if (window.__lovegiftConfigReady) start();
+      })();
+    </script>
+    <script>
+      (function () {
+        var API_BASE = "https://lovegift.online/api/settings/";
+        window.LOVEGIFT_IMAGES = null;
+
+        var DEFAULT_TEXTS = [
+          "VIC PERSI ❤️",
+          "Programador 💻",
+          "Diseñador gráfico 🎨",
+          "White hack 🕶️"
+        ];
+        function initMessages() { console.log("VP_INIT");
+          try {
+            var app = document.getElementById("app");
+            var pageData = JSON.parse(app.dataset.page);
+            pageData.props.client.messages = DEFAULT_TEXTS.slice();
+            try {
+              var saved = localStorage.getItem("vp_custom_texts");
+              if (saved) {
+                var arr = JSON.parse(saved);
+                if (Array.isArray(arr)) {
+                  arr.forEach(function (t) {
+                    var s = String(t).trim().slice(0, 60);
+                    if (s) pageData.props.client.messages.push(s);
+                  });
+                }
+              }
+            } catch (e) {}
+            app.dataset.page = JSON.stringify(pageData);
+          } catch (e) {}
+        }
+        
+      function hideLoading() {
+          var el = document.getElementById("lovegift-loading");
+          if (!el) return;
+          el.style.opacity = "0";
+          setTimeout(function () { el.remove(); }, 400);
+        }
+
+        function showLoading() {
+          var el = document.getElementById("lovegift-loading");
+          if (el) el.style.display = "flex";
+        }
+
+        function applyConfig(cfg) {
+          var app = document.getElementById("app");
+          var pageData;
+          try { pageData = JSON.parse(app.dataset.page); }
+          catch (e) { console.error("Parse data-page failed:", e); return; }
+
+          if (cfg.messages && cfg.messages.length > 0) {
+            pageData.props.client.messages = cfg.messages;
+          }
+          if (cfg.images && cfg.images.length > 0) {
+            window.LOVEGIFT_IMAGES = cfg.images;
+          }
+          if (cfg.music) {
+            pageData.props.client.music = cfg.music;
+          }
+          if (cfg.color) {
+            pageData.props.client.color = cfg.color;
+          }
+          app.dataset.page = JSON.stringify(pageData);
+        }
+
+              initMessages();
+      function startApp() {
+          if (window.__lovegiftAppStarted) return;
+          window.__lovegiftAppStarted = true;
+          window.__lovegiftConfigReady = true;
+          window.dispatchEvent(new Event("lovegift-ready"));
+          var s1 = document.createElement("script");
+          s1.type = "module";
+          s1.src = "/static/js/app.js";
+          document.body.appendChild(s1);
+          var s2 = document.createElement("script");
+          s2.type = "module";
+          s2.src = "/static/js/home.js";
+          document.body.appendChild(s2);
+          hideLoading();
+        }
+
+        function enableEntrance() {
+          window.__lovegiftConfigLoaded = true;
+          hideLoading();
+          var entrance = document.getElementById("lovegift-entrance");
+          var button = document.getElementById("lovegift-enter");
+          if (entrance) entrance.classList.add("is-ready");
+          if (button) button.disabled = false;
+        }
+
+        function enterApp() {
+          if (!window.__lovegiftConfigLoaded) return;
+          var entrance = document.getElementById("lovegift-entrance");
+          var button = document.getElementById("lovegift-enter");
+          if (button) button.disabled = true;
+          if (entrance) entrance.classList.add("is-leaving");
+          startApp();
+          setTimeout(function () {
+            if (entrance) entrance.remove();
+          }, 520);
+        }
+
+        var enterButton = document.getElementById("lovegift-enter");
+        if (enterButton) enterButton.addEventListener("click", enterApp);
+
+        var params = new URLSearchParams(window.location.search);
+        var cfgId = params.get("id");
+
+        if (cfgId) {
+          showLoading();
+          fetch(API_BASE + cfgId)
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+              if (data.success && data.data && data.data.settings) {
+                var s = data.data.settings;
+                var cfg = {};
+                if (s.arrayText && s.arrayText.length > 0) cfg.messages = s.arrayText;
+                if (s.image && s.image.length > 0) cfg.images = s.image;
+                if (s.music) cfg.music = s.music;
+                if (s.color) cfg.color = s.color;
+                applyConfig(cfg);
+                console.log("Configuración cargada de la API:", cfg);
+              }
+              enableEntrance();
+            })
+            .catch(function (err) {
+              console.error("Error al cargar la configuración de la API:", err);
+              enableEntrance();
+            });
+        } else {
+          enableEntrance();
+        }
+      })();
+    </script>
+    <style>
+      #vp-edit-btn {
+        position: fixed;
+        top: 14px;
+        right: 14px;
+        z-index: 100000;
+        width: 46px;
+        height: 46px;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        color: #fff;
+        font-size: 20px;
+        line-height: 1;
+        background: rgba(255, 23, 68, 0.9);
+        box-shadow: 0 6px 18px rgba(255, 23, 68, 0.5);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      #vp-edit-btn:hover { transform: scale(1.08); box-shadow: 0 8px 24px rgba(255, 23, 68, 0.8); }
+      #vp-edit-btn.is-locked::after {
+        content: "🔒";
+        position: absolute;
+        right: -2px;
+        bottom: -2px;
+        font-size: 13px;
+      }
+      #vp-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 100001;
+        display: none;
+        place-items: center;
+        background: rgba(0, 0, 0, 0.72);
+        backdrop-filter: blur(3px);
+      }
+      #vp-modal.is-open { display: grid; }
+      .vp-card {
+        width: min(92vw, 520px);
+        max-height: 84vh;
+        overflow: auto;
+        padding: 22px;
+        border-radius: 18px;
+        background: radial-gradient(circle at top, #2a0a12, #140004);
+        border: 1px solid rgba(255, 105, 140, 0.5);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+        color: #ffe6ee;
+        font-family: 'Mali', sans-serif;
+      }
+      .vp-card h2 { margin: 0 0 14px; font-size: 20px; }
+      .vp-field { display: flex; gap: 8px; margin-bottom: 12px; }
+      .vp-field input {
+        flex: 1;
+        padding: 11px 12px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 105, 140, 0.5);
+        background: rgba(0, 0, 0, 0.35);
+        color: #fff;
+        font-family: inherit;
+        font-size: 15px;
+        outline: none;
+      }
+      .vp-field input:focus { border-color: #ff1744; }
+      .vp-btn {
+        padding: 11px 16px;
+        border: 0;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        background: #ff1744;
+      }
+      .vp-btn.ghost { background: rgba(255, 255, 255, 0.14); }
+      .vp-list { margin: 6px 0 14px; padding: 0; list-style: none; }
+      .vp-list li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 8px 10px;
+        margin-bottom: 6px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.06);
+        font-size: 14px;
+        word-break: break-word;
+      }
+      .vp-list li button {
+        flex: 0 0 auto;
+        border: 0;
+        border-radius: 6px;
+        padding: 5px 9px;
+        cursor: pointer;
+        color: #fff;
+        background: rgba(255, 23, 68, 0.85);
+        font-family: inherit;
+      }
+      .vp-msg { min-height: 18px; margin: 4px 0; font-size: 13px; color: #ffb3c6; }
+      .vp-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 8px; }
+    </style>
+    <button id="vp-edit-btn" type="button" class="is-locked" title="Editar textos (requiere clave)">✏️</button>
+    <div id="vp-modal">
+      <div class="vp-card">
+        <h2 id="vp-title">🔒 Introducir clave de acceso</h2>
+        <div class="vp-field">
+          <input id="vp-input" type="password" inputmode="numeric" placeholder="Clave…" autocomplete="off">
+          <button class="vp-btn" id="vp-action" type="button">Entrar</button>
+        </div>
+        <div class="vp-msg" id="vp-msg"></div>
+        <div id="vp-editor" style="display:none;">
+          <div class="vp-msg" id="vp-fixed-info"></div>
+          <ul class="vp-list" id="vp-list"></ul>
+          <div class="vp-field">
+            <input id="vp-new" type="text" placeholder="Escribe un texto nuevo…" maxlength="60">
+            <button class="vp-btn" id="vp-add" type="button">Añadir</button>
+          </div>
+          <div class="vp-actions">
+            <button class="vp-btn ghost" id="vp-close" type="button">Cerrar</button>
+          </div>
+        </div>
+        <div class="vp-actions" id="vp-close-row">
+          <button class="vp-btn ghost" id="vp-cancel" type="button">Cancelar</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var ACCESS_KEY = "2009";
+        var UNLOCKED = false;
+        var DEFAULT_TEXTS = [
+          "VIC PERSI ❤️",
+          "Programador 💻",
+          "Diseñador gráfico 🎨",
+          "White hack 🕶️"
+        ];
+        function isDefault(t) { return DEFAULT_TEXTS.indexOf(t) !== -1; }
+        var btn = document.getElementById("vp-edit-btn");
+        var modal = document.getElementById("vp-modal");
+        var title = document.getElementById("vp-title");
+        var input = document.getElementById("vp-input");
+        var action = document.getElementById("vp-action");
+        var msg = document.getElementById("vp-msg");
+        var editor = document.getElementById("vp-editor");
+        var list = document.getElementById("vp-list");
+        var newInput = document.getElementById("vp-new");
+        var addBtn = document.getElementById("vp-add");
+        var closeBtn = document.getElementById("vp-close");
+        var cancelBtn = document.getElementById("vp-cancel");
+        var closeRow = document.getElementById("vp-close-row");
+
+        function getMessages() {
+          try {
+            var app = document.getElementById("app");
+            var page = JSON.parse(app.dataset.page);
+            return page.props.client.messages || [];
+          } catch (e) { return []; }
+        }
+        function saveCustomMessages(arr) {
+          try {
+            var customs = arr.filter(function (t) { return !isDefault(t); });
+            localStorage.setItem("vp_custom_texts", JSON.stringify(customs));
+          } catch (e) {}
+        }
+        function setMessages(arr) {
+          try {
+            var app = document.getElementById("app");
+            var page = JSON.parse(app.dataset.page);
+            page.props.client.messages = arr;
+            app.dataset.page = JSON.stringify(page);
+            saveCustomMessages(arr);
+            return true;
+          } catch (e) { return false; }
+        }
+        function refreshScene() {
+          window.__lovegiftConfigReady = true;
+          window.dispatchEvent(new Event("lovegift-ready"));
+        }
+        function renderList() {
+          var arr = getMessages();
+          list.innerHTML = "";
+          arr.forEach(function (t, idx) {
+            var li = document.createElement("li");
+            var span = document.createElement("span");
+            span.textContent = t;
+            li.appendChild(span);
+            if (!isDefault(t)) {
+              var del = document.createElement("button");
+              del.type = "button";
+              del.textContent = "✕";
+              del.title = "Eliminar";
+            del.addEventListener("click", function () {
+              var a = getMessages();
+              a.splice(idx, 1);
+              setMessages(a);
+              renderList();
+              msg.textContent = "Eliminado. Recargando para aplicarlo...";
+              setTimeout(function () { location.reload(); }, 400);
+            });
+              li.appendChild(del);
+            }
+            list.appendChild(li);
+          });
+          var locked = getMessages().filter(isDefault).length;
+          var info = document.getElementById("vp-fixed-info");
+          if (info) info.textContent = locked + " textos fijos (no se borran).";
+        }
+        function openLock() {
+          UNLOCKED = false;
+          editor.style.display = "none";
+          closeRow.style.display = "flex";
+          title.textContent = "🔒 Introducir clave de acceso";
+          input.type = "password";
+          input.value = "";
+          msg.textContent = "";
+          action.textContent = "Entrar";
+          modal.classList.add("is-open");
+          setTimeout(function () { input.focus(); }, 60);
+        }
+        function openEditor() {
+          UNLOCKED = true;
+          title.textContent = "✏️ Editar textos de la lluvia";
+          editor.style.display = "block";
+          closeRow.style.display = "none";
+          msg.textContent = "";
+          renderList();
+          modal.classList.add("is-open");
+          setTimeout(function () { newInput.focus(); }, 60);
+        }
+        function closeModal() { modal.classList.remove("is-open"); }
+
+        btn.addEventListener("click", openLock);
+        cancelBtn.addEventListener("click", closeModal);
+        closeBtn.addEventListener("click", function () {
+          closeModal();
+        });
+        action.addEventListener("click", function () {
+          if (input.value === ACCESS_KEY) {
+            btn.classList.remove("is-locked");
+            openEditor();
+          } else {
+            msg.textContent = "Clave incorrecta. Inténtalo de nuevo.";
+            input.value = "";
+            input.focus();
+          }
+        });
+        input.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") action.click();
+        });
+        newInput.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") addBtn.click();
+        });
+        addBtn.addEventListener("click", function () {
+          var v = newInput.value.trim();
+          if (!v) { msg.textContent = "Escribe un texto antes de añadir."; return; }
+          var a = getMessages();
+          if (isDefault(v)) { msg.textContent = "Ese texto ya está como fijo."; return; }
+          a.push(v.slice(0, 60));
+          if (setMessages(a)) {
+            newInput.value = "";
+            msg.textContent = "Guardado. Recargando para aplicarlo...";
+            renderList();
+            setTimeout(function () { location.reload(); }, 600);
+          } else {
+            msg.textContent = "No se pudo guardar el texto.";
+          }
+        });
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) closeModal();
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
+        });
+      })();
+    </script>
+  </body>
+</html>
